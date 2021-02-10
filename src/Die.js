@@ -8,7 +8,7 @@ export default class Die extends Component {
     return (
       <div>
         <div className="Die">
-          <i class={iconClass}></i>
+          <i className={iconClass}></i>
         </div>
       </div>
     );
