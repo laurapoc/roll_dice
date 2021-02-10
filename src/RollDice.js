@@ -9,6 +9,7 @@ export default class RollDice extends Component {
   };
 
   buttonClickHandler = (e) => {
+    //   this could be a static defaultProps either
     let dotsArray = ["one", "two", "three", "four", "five", "six"];
     let randomDotsString1 = [...dotsArray][
       Math.floor(Math.random() * dotsArray.length)
@@ -16,6 +17,7 @@ export default class RollDice extends Component {
     let randomDotsString2 = [...dotsArray][
       Math.floor(Math.random() * dotsArray.length)
     ];
+
     this.setState({ dot1: randomDotsString1, dot2: randomDotsString2 });
   };
 

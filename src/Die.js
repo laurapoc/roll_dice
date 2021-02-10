@@ -4,12 +4,10 @@ import "./Die.css";
 export default class Die extends Component {
   render() {
     let dots = this.props.dots;
-    let iconClass = `fas fa-dice-${dots} fa-9x`;
+    let iconClass = `Die fas fa-dice-${dots}`;
     return (
       <div>
-        <div className="Die">
-          <i className={iconClass}></i>
-        </div>
+        <i className={iconClass}></i>
       </div>
     );
   }

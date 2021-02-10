@@ -1,8 +1,5 @@
 .Die {
- 
-    margin: 30px;
-}
-
-.Die i {
-    color: rgb(110, 53, 110);
+  margin: 30px;
+  color: rgb(110, 53, 110);
+  font-size: 10em;
 }
