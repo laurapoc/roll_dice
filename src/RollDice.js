@@ -4,26 +4,27 @@ import "./RollDice.css";
 
 export default class RollDice extends Component {
   state = {
-    dot: "one"
+    dot1: "one",
+    dot2: "one",
   };
 
-
-//   dot: ["one", "two", "three", "four", "five", "six"]
-
   buttonClickHandler = (e) => {
-    console.log(this.state.dot);
     let dotsArray = ["one", "two", "three", "four", "five", "six"];
-    let randomDotsString = [...dotsArray][Math.floor(Math.random()*dotsArray.length)];
-    this.setState({dot: randomDotsString});
+    let randomDotsString1 = [...dotsArray][
+      Math.floor(Math.random() * dotsArray.length)
+    ];
+    let randomDotsString2 = [...dotsArray][
+      Math.floor(Math.random() * dotsArray.length)
+    ];
+    this.setState({ dot1: randomDotsString1, dot2: randomDotsString2 });
   };
 
   render() {
     return (
       <div>
         <div className="RollDice">
-          <Die dots={this.state.dot}/>
-          <Die dots={this.state.dot}/>
-         
+          <Die dots={this.state.dot1} />
+          <Die dots={this.state.dot2} />
         </div>
         <button onClick={this.buttonClickHandler}>Roll Dice!</button>
       </div>
