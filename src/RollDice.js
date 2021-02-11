@@ -23,8 +23,8 @@ export default class RollDice extends Component {
 
   render() {
     return (
-      <div>
-        <div className="RollDice">
+      <div className="RollDice">
+        <div >
           <Die dots={this.state.dot1} />
           <Die dots={this.state.dot2} />
         </div>
@@ -33,3 +33,4 @@ export default class RollDice extends Component {
     );
   }
 }
+
